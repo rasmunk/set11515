@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem\bdp\expand_src" old_decomp_dir="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem\bdp\src">
+        <!-- Definition directory list -->
+        <definition_dir path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" />
+        <!-- Component file list -->
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="Controller" suffix="mch" user="40161642">
+            <component name="Controller" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="Controller_i" suffix="imp" user="40161642">
+            <component name="Controller_i" type="implementation" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="OilMonitor" suffix="mch" user="40161642">
+            <component name="OilMonitor" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="OilMonitor_i" suffix="imp" user="40161642">
+            <component name="OilMonitor_i" type="implementation" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="PetrolMonitor" suffix="mch" user="40161642">
+            <component name="PetrolMonitor" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\CarSystem" name="PetrolMonitor_i" suffix="imp" user="40161642">
+            <component name="PetrolMonitor_i" type="implementation" />
+        </component_file>
+    </project>
+</db_xml>

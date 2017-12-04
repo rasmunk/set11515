@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b0a32a35-fbc1-4e4a-8e16-0d8223ffbce6" name="ActivityCarSystem" linkedPackageId="a6e02e7e-55a6-4687-890f-c2e61a06339b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="5c8b5b34-c7fb-4f73-9a7c-df5e3ba2f753" name="ActivityCarSystem" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="25845270-cf88-4dd6-b9a2-efb63cedd56b" />
+        <nodes>
+          <initialNode Id="11669be1-1352-4e4a-8f7f-2ede1521e54d" name="Initial1" isLeaf="false">
+            <elementDefinition Id="669ff63f-868b-47b0-a96d-15a8b3ef8ce2" />
+            <flowNodeTargets>
+              <controlFlow Id="cb647bd9-3d22-4977-9791-1a93794df73e" isLeaf="false">
+                <opaqueActionMoniker Id="0f27dbaf-89d6-43f1-823e-1935b25c572f" LastKnownName="Insert Key" />
+                <elementDefinition Id="c00ea319-babe-456f-b8ef-c044de3765f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <forkNode Id="739ff9bc-196c-4434-948d-1c8306d7149c" name="Fork1" isLeaf="false">
+            <elementDefinition Id="f4df3cdb-c8ba-42a8-a5a2-cc9996c394e3" />
+            <flowNodeTargets>
+              <controlFlow Id="0df1f637-744e-4356-9ac0-bbdb48b11606" isLeaf="false">
+                <opaqueActionMoniker Id="1bdc228c-4ac3-4cf7-999c-fe5c1c2d755b" LastKnownName="Check Petrol Level" />
+                <elementDefinition Id="296c61c0-f8f9-4140-8d9c-29c0956bac1e" />
+              </controlFlow>
+              <controlFlow Id="a4ad3568-c6cb-4b43-b40d-161b2bc81c7b" isLeaf="false">
+                <opaqueActionMoniker Id="5b5c0750-4be1-4b5f-9a19-ecea227a2fe2" LastKnownName="Check Oil Pressure" />
+                <elementDefinition Id="7b2afc6c-b833-4b4f-9561-a8cd6873b9e7" />
+              </controlFlow>
+              <controlFlow Id="f5efc12b-fd36-4275-876a-690d2a4958e6" isLeaf="false">
+                <opaqueActionMoniker Id="9ee2dff9-a37d-4d27-b4f0-09036a771d38" LastKnownName="Check Oil Temperature" />
+                <elementDefinition Id="d793131b-8fd2-49d2-a845-f3214f4d8fd4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="1bdc228c-4ac3-4cf7-999c-fe5c1c2d755b" name="Check Petrol Level" isLeaf="false">
+            <elementDefinition Id="35934a78-1412-4c06-8ce6-1ed3b4b19644" />
+            <flowNodeTargets>
+              <controlFlow Id="783f8455-3ccf-41b5-8f77-df7bee673de9" isLeaf="false">
+                <joinNodeMoniker Id="e523cf09-9479-4ea8-9ada-3871865369e4" LastKnownName="Join1" />
+                <elementDefinition Id="2e70d136-f75c-4772-b574-c5936721a24c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5b5c0750-4be1-4b5f-9a19-ecea227a2fe2" name="Check Oil Pressure" isLeaf="false">
+            <elementDefinition Id="ab1e7404-6d57-4e1c-8dc3-58bfd29d31e0" />
+            <flowNodeTargets>
+              <controlFlow Id="0549f92a-e718-4aa5-9fe9-82c5d033ba27" isLeaf="false">
+                <joinNodeMoniker Id="e523cf09-9479-4ea8-9ada-3871865369e4" LastKnownName="Join1" />
+                <elementDefinition Id="658767a8-081a-4177-b8ba-91459161e28c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9ee2dff9-a37d-4d27-b4f0-09036a771d38" name="Check Oil Temperature" isLeaf="false">
+            <elementDefinition Id="63390b9e-c4b3-4051-b380-ebeec09f014e" />
+            <flowNodeTargets>
+              <controlFlow Id="4d6d7b9c-45c1-445e-807a-3ba4551ea518" isLeaf="false">
+                <joinNodeMoniker Id="e523cf09-9479-4ea8-9ada-3871865369e4" LastKnownName="Join1" />
+                <elementDefinition Id="12d7c8d1-45fa-4b93-9984-82888f0edaf2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="e523cf09-9479-4ea8-9ada-3871865369e4" name="Join1" isLeaf="false">
+            <elementDefinition Id="8b9a023c-5ab0-4d15-a6ab-f5f9d41115af" />
+            <flowNodeTargets>
+              <controlFlow Id="4009f85b-ad5e-4367-9716-38dc1bcb1989" isLeaf="false">
+                <decisionNodeMoniker Id="d6bfeed9-e7d2-4c68-9634-329bf02f45e5" LastKnownName="Decision2" />
+                <elementDefinition Id="e85d369e-b77d-4f58-86f4-d00cac94cc8c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode Id="d6bfeed9-e7d2-4c68-9634-329bf02f45e5" name="Decision2" isLeaf="false">
+            <elementDefinition Id="10317870-dd88-49de-889d-4866b4fab4c1" />
+            <flowNodeTargets>
+              <controlFlow Id="3b78edfa-b7c4-485b-a05a-a2e0c61be0be" guard="High Oil Temperature" name="High Oil Temperature" isLeaf="false">
+                <opaqueActionMoniker Id="967ce1be-ea8e-4cfd-96c4-1ecc040c00e2" LastKnownName="Turn on Oil/Petrol Warning light" />
+                <elementDefinition Id="ac01aec4-ddbe-4883-8344-54fc4fa81a55" />
+              </controlFlow>
+              <controlFlow Id="6eeb8dc3-5cc2-49ef-8d50-abab5876ebb9" guard="Normal Oil Temperature" name="Low Oil Temperature" isLeaf="false">
+                <decisionNodeMoniker Id="79598fad-0aba-4265-ac40-d1d2fee16344" LastKnownName="Decision3" />
+                <elementDefinition Id="d7f1a5c8-fe66-4f76-8dab-5740f4ae5368" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="967ce1be-ea8e-4cfd-96c4-1ecc040c00e2" name="Turn on Oil/Petrol Warning light" isLeaf="false">
+            <elementDefinition Id="c27dff33-f04a-48fa-b6ac-5912c9402269" />
+            <flowNodeTargets>
+              <controlFlow Id="416b211b-10a2-43d6-aee3-0f980d4ffd1b" isLeaf="false">
+                <mergeNodeMoniker Id="b46c3a8b-e520-4ffb-b180-83a6b25afbcb" LastKnownName="Merge2" />
+                <elementDefinition Id="e65ba679-a956-4b22-8c08-c86f55847a6d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="79598fad-0aba-4265-ac40-d1d2fee16344" name="Decision3" isLeaf="false">
+            <elementDefinition Id="74068e4c-eb3c-4fa3-bc11-4078682e0a43" />
+            <flowNodeTargets>
+              <controlFlow Id="50a672ff-ee86-491c-b625-36a60859eec6" guard="Normal Oil Pressure" isLeaf="false">
+                <decisionNodeMoniker Id="8ca854a9-af01-4203-95cd-67bac392bf72" LastKnownName="Decision4" />
+                <elementDefinition Id="011754ef-7cee-4e8b-8ea4-72499b2a0afe" />
+              </controlFlow>
+              <controlFlow Id="4b8e7d3a-f6e0-4367-98b5-46305fb5aaa7" guard="High Oil Pressure" isLeaf="false">
+                <opaqueActionMoniker Id="967ce1be-ea8e-4cfd-96c4-1ecc040c00e2" LastKnownName="Turn on Oil/Petrol Warning light" />
+                <elementDefinition Id="2204b7f0-7c36-4201-a45f-43ba13d3dcb6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="8ca854a9-af01-4203-95cd-67bac392bf72" name="Decision4" isLeaf="false">
+            <elementDefinition Id="06bae32a-cfad-48b1-80be-716b9b7d7fff" />
+            <flowNodeTargets>
+              <controlFlow Id="e4771bb3-773a-4c7b-ac0f-dbe084d752fc" guard="Low Petrol Level" isLeaf="false">
+                <opaqueActionMoniker Id="967ce1be-ea8e-4cfd-96c4-1ecc040c00e2" LastKnownName="Turn on Oil/Petrol Warning light" />
+                <elementDefinition Id="b001b875-707a-49f4-a717-5f8e4419560e" />
+              </controlFlow>
+              <controlFlow Id="ea58dff3-5a3a-4d9a-a61c-fa0a658bfd6b" isLeaf="false">
+                <opaqueActionMoniker Id="bca0cb5b-ffc5-430c-b9bf-5acef9527a4c" LastKnownName="Start Engine" />
+                <elementDefinition Id="cb2ac68a-48b0-4627-9871-a423bc397db0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <forkNode Id="95aa253c-05f3-417a-8d5e-8fbcb29c5ca4" name="Fork2" isLeaf="false">
+            <elementDefinition Id="f64cb75b-a6f4-4a08-b4de-092c13aaf9b1" />
+            <flowNodeTargets>
+              <controlFlow Id="3b8a38b8-8093-42d4-bb88-1c6dbd6c3fd7" isLeaf="false">
+                <opaqueActionMoniker Id="599e7ffd-9d9c-4b85-8d78-9b5d52256310" LastKnownName="Check Engine Status" />
+                <elementDefinition Id="c205a7e6-d0de-440e-aa7d-8710c2b3a5b4" />
+              </controlFlow>
+              <controlFlow Id="ed24655e-cd65-43fe-a9e4-915611c17be5" isLeaf="false">
+                <opaqueActionMoniker Id="600285c0-2bfc-4138-9344-39d15f51826d" LastKnownName="Check Brake Status" />
+                <elementDefinition Id="2e74150d-2557-49be-b475-014dbea7ddc6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="599e7ffd-9d9c-4b85-8d78-9b5d52256310" name="Check Engine Status" isLeaf="false">
+            <elementDefinition Id="cef97ac7-429f-4bca-b1bb-c5df1080fc0e" />
+            <flowNodeTargets>
+              <controlFlow Id="bc0aa5c2-36ac-4951-82ab-57836b9a6cf0" isLeaf="false">
+                <joinNodeMoniker Id="e29fa77c-71fe-4132-9551-d0603be3c396" LastKnownName="Join2" />
+                <elementDefinition Id="9b12954e-055c-4986-82dd-3d82405debeb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="e29fa77c-71fe-4132-9551-d0603be3c396" name="Join2" isLeaf="false">
+            <elementDefinition Id="1818228b-3828-421e-ada9-a8efd59d3aab" />
+            <flowNodeTargets>
+              <controlFlow Id="20b7760e-0012-4f38-9907-44cb1d5124b3" isLeaf="false">
+                <decisionNodeMoniker Id="8a145a3f-2f7c-4766-a546-b34e27d95c18" LastKnownName="Decision5" />
+                <elementDefinition Id="dd1bdc93-59a8-47c0-9702-95a8cdfee3c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="600285c0-2bfc-4138-9344-39d15f51826d" name="Check Brake Status" isLeaf="false">
+            <elementDefinition Id="45386ce0-b8cd-4efc-bead-bd527fbeefd8" />
+            <flowNodeTargets>
+              <controlFlow Id="bbd7fce9-1afc-4782-8288-e2ac2dab16ec" isLeaf="false">
+                <joinNodeMoniker Id="e29fa77c-71fe-4132-9551-d0603be3c396" LastKnownName="Join2" />
+                <elementDefinition Id="7af73202-657a-4bc9-b96b-d7967f588b33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8a145a3f-2f7c-4766-a546-b34e27d95c18" name="Decision5" isLeaf="false">
+            <elementDefinition Id="36b29264-a227-4541-ba6f-5589e622209f" />
+            <flowNodeTargets>
+              <controlFlow Id="e733d8c0-4d8a-4012-a0cc-8ac50cd31b50" guard="Engine Failed" isLeaf="false">
+                <opaqueActionMoniker Id="3a8c2322-55ec-4e44-88d2-152d114cff50" LastKnownName="Apply Brakes" />
+                <elementDefinition Id="12005cca-69b7-4e8b-9da9-441f3177cd79" />
+              </controlFlow>
+              <controlFlow Id="62db39a9-574e-4af2-9703-511f33f481a4" isLeaf="false">
+                <mergeNodeMoniker Id="e724f134-dcb6-4fe9-b39a-f7be8ff55f07" LastKnownName="Merge4" />
+                <elementDefinition Id="62875bbc-23e5-4975-9c68-0cf0bee4f219" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="3a8c2322-55ec-4e44-88d2-152d114cff50" name="Apply Brakes" isLeaf="false">
+            <elementDefinition Id="b37b0d24-b7a3-4b6f-bc68-ae06a680473c" />
+            <flowNodeTargets>
+              <controlFlow Id="1a0e520a-a3de-4d3d-b9df-0803e228992c" isLeaf="false">
+                <mergeNodeMoniker Id="e724f134-dcb6-4fe9-b39a-f7be8ff55f07" LastKnownName="Merge4" />
+                <elementDefinition Id="b03d6047-95b0-418c-bac1-ae1d39f40a34" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="23c5181b-4f9a-4b39-8427-d8128f533b2a" name="Decision6" isLeaf="false">
+            <elementDefinition Id="4cc67fc4-b9cd-44ab-9bd0-ab2762d9a532" />
+            <flowNodeTargets>
+              <controlFlow Id="ffad2f5a-5267-47a8-ba3a-76d1b3c4b396" guard="Brakes Failed" isLeaf="false">
+                <opaqueActionMoniker Id="78c3f735-0af7-4cc2-b52e-46b3e2a2c3a3" LastKnownName="Stop Engine" />
+                <elementDefinition Id="4fdd4612-eed8-460c-8f86-da7fff1400b3" />
+              </controlFlow>
+              <controlFlow Id="529546f2-ab37-4cb4-a35c-b5cb5e80025e" isLeaf="false">
+                <decisionNodeMoniker Id="60cadb63-e556-4055-af1d-44f5a0fab584" LastKnownName="Decision7" />
+                <elementDefinition Id="4ccda393-6309-450c-a995-72b15b3c00c6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="78c3f735-0af7-4cc2-b52e-46b3e2a2c3a3" name="Stop Engine" isLeaf="false">
+            <elementDefinition Id="24151756-c9bb-478c-ad6e-c9bfdfbd6f99" />
+            <flowNodeTargets>
+              <controlFlow Id="6fd256b5-1385-4af2-a45b-0e1432e1ef31" isLeaf="false">
+                <mergeNodeMoniker Id="b46c3a8b-e520-4ffb-b180-83a6b25afbcb" LastKnownName="Merge2" />
+                <elementDefinition Id="fa2fb34d-4cdd-4bc5-bec7-9ed8e7d309fd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="60cadb63-e556-4055-af1d-44f5a0fab584" name="Decision7" isLeaf="false">
+            <elementDefinition Id="42da4b8b-993c-4d6a-a32d-9b00e0af71dd" />
+            <flowNodeTargets>
+              <controlFlow Id="23f8421c-0f8b-4d91-beba-64217e5eb907" guard="Press Accelerator" isLeaf="false">
+                <opaqueActionMoniker Id="c68055db-d971-44a3-aa10-16aec14c8315" LastKnownName="Check Current Speed" />
+                <elementDefinition Id="d19f861c-c658-416d-946a-65ce4f3e60dc" />
+              </controlFlow>
+              <controlFlow Id="7353fc0d-81c4-43cf-9dae-d6b3788e3959" isLeaf="false">
+                <mergeNodeMoniker Id="199cba5d-172e-4368-b223-59b58ff7043d" LastKnownName="Merge5" />
+                <elementDefinition Id="2c3171aa-f673-4243-ba2c-832f848adbb0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="c7be103b-d6b4-413c-882f-8d14d973e445" name="Decision9" isLeaf="false">
+            <elementDefinition Id="b52b633f-8d74-4315-92dc-016d47fb81a6" />
+            <flowNodeTargets>
+              <controlFlow Id="4a127a5a-8ce4-47d3-9f9e-ce6343e866e5" guard="Withdrawn Key" isLeaf="false">
+                <opaqueActionMoniker Id="c302b1d0-8db3-4326-a4ec-fed5930bdd50" LastKnownName="Stop Engine" />
+                <elementDefinition Id="0eb24099-24dc-4424-aee5-89aafdf1d520" />
+              </controlFlow>
+              <controlFlow Id="d6c8986e-4369-4bb6-adbc-28420ea16426" isLeaf="false">
+                <mergeNodeMoniker Id="4361243e-3b91-4218-9be4-034819b030d9" LastKnownName="Merge3" />
+                <elementDefinition Id="b607bb64-e7fa-4271-82a4-3ec62e40e2d0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="c302b1d0-8db3-4326-a4ec-fed5930bdd50" name="Stop Engine" isLeaf="false">
+            <elementDefinition Id="d5015da4-63ca-42e0-82eb-1f30edaa6565" />
+            <flowNodeTargets>
+              <controlFlow Id="dc03f2d0-06d1-4945-ba56-103d58ec73e4" isLeaf="false">
+                <activityFinalNodeMoniker Id="bd0d52f6-cafc-495e-8d46-8f5c743bad9a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="93d84b4c-92a6-4d75-8403-d3f3a2c3ad74" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="bd0d52f6-cafc-495e-8d46-8f5c743bad9a" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="f3690db9-9c84-426e-aabd-681c1e9fba58" />
+          </activityFinalNode>
+          <opaqueAction Id="c68055db-d971-44a3-aa10-16aec14c8315" name="Check Current Speed" isLeaf="false">
+            <elementDefinition Id="80472fb9-9735-4045-a929-f702b387e514" />
+            <flowNodeTargets>
+              <controlFlow Id="b1165549-a9ae-49ac-bb1b-9b40bfb567c3" isLeaf="false">
+                <decisionNodeMoniker Id="b2006b81-f712-40c1-a585-9d678955c6fc" LastKnownName="Decision10" />
+                <elementDefinition Id="da9018ed-582d-4217-adc0-5300b6c698b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b2006b81-f712-40c1-a585-9d678955c6fc" name="Decision10" isLeaf="false">
+            <elementDefinition Id="55b4f2b0-16b8-42ad-87eb-bfacff3f252d" />
+            <flowNodeTargets>
+              <controlFlow Id="cceab27f-d1dc-42b8-aa64-06aba6d79de0" guard="Current Speed less than Maximum Speed" isLeaf="false">
+                <opaqueActionMoniker Id="4077a69e-0a90-4231-868a-3fa874273b40" LastKnownName="Increase Speed" />
+                <elementDefinition Id="4fb6f7f1-faaa-46af-bc9d-9051d3a40f2f" />
+              </controlFlow>
+              <controlFlow Id="3274aba8-d7da-4748-a02f-9f3c480b6e15" isLeaf="false">
+                <mergeNodeMoniker Id="9a2ce668-5c4a-412e-a22a-ec37949ab7ef" LastKnownName="Merge1" />
+                <elementDefinition Id="55772540-4efd-4876-98a3-d20040acf1ae" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="4077a69e-0a90-4231-868a-3fa874273b40" name="Increase Speed" isLeaf="false">
+            <elementDefinition Id="d563561b-8a56-48d7-a131-93dd6f15806e" />
+            <flowNodeTargets>
+              <controlFlow Id="4f71bf0c-b31e-475b-8de0-22009f5e10d1" isLeaf="false">
+                <mergeNodeMoniker Id="9a2ce668-5c4a-412e-a22a-ec37949ab7ef" LastKnownName="Merge1" />
+                <elementDefinition Id="e72989f6-d8a1-4167-8c9e-c7bc31abcb7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bca0cb5b-ffc5-430c-b9bf-5acef9527a4c" name="Start Engine" isLeaf="false">
+            <elementDefinition Id="5322ebd0-d2d7-4981-b4eb-7166981640ea" />
+            <flowNodeTargets>
+              <controlFlow Id="5d0d683d-1174-4ee8-9b91-afa528ef524d" isLeaf="false">
+                <forkNodeMoniker Id="95aa253c-05f3-417a-8d5e-8fbcb29c5ca4" LastKnownName="Fork2" />
+                <elementDefinition Id="96da214f-b098-4fa9-ba0f-9ca75a00ea51" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="9a2ce668-5c4a-412e-a22a-ec37949ab7ef" name="Merge1" isLeaf="false">
+            <elementDefinition Id="e0b4499e-35f9-4cac-af95-2249f43915b5" />
+            <flowNodeTargets>
+              <controlFlow Id="efbfae51-ec12-46e5-98c2-6bebcf8a2d29" isLeaf="false">
+                <mergeNodeMoniker Id="199cba5d-172e-4368-b223-59b58ff7043d" LastKnownName="Merge5" />
+                <elementDefinition Id="76efda1c-0ce0-4a64-bf19-ef4ba333d999" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode Id="b46c3a8b-e520-4ffb-b180-83a6b25afbcb" name="Merge2" isLeaf="false">
+            <elementDefinition Id="2bdf7a54-75d0-41e9-be34-c3b2f208b99c" />
+            <flowNodeTargets>
+              <controlFlow Id="40f706b7-263f-416b-920f-9ca799fbff82" isLeaf="false">
+                <mergeNodeMoniker Id="4361243e-3b91-4218-9be4-034819b030d9" LastKnownName="Merge3" />
+                <elementDefinition Id="ed6d1441-1482-49cc-8b8f-ba56c1a48c97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode Id="4361243e-3b91-4218-9be4-034819b030d9" name="Merge3" isLeaf="false">
+            <elementDefinition Id="7449fd6a-62d4-487a-81d0-01fa4eb9a2c7" />
+            <flowNodeTargets>
+              <controlFlow Id="173bd02a-04fe-4e58-82e1-a74192dc5b30" isLeaf="false">
+                <forkNodeMoniker Id="739ff9bc-196c-4434-948d-1c8306d7149c" LastKnownName="Fork1" />
+                <elementDefinition Id="f3767cac-9829-4894-a232-81093262538a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="0f27dbaf-89d6-43f1-823e-1935b25c572f" name="Insert Key" isLeaf="false">
+            <elementDefinition Id="c0efbc84-5691-42ed-92aa-9693a070a58e" />
+            <flowNodeTargets>
+              <controlFlow Id="2355f558-2b61-4111-89ae-082f9b8c525a" isLeaf="false">
+                <mergeNodeMoniker Id="4361243e-3b91-4218-9be4-034819b030d9" LastKnownName="Merge3" />
+                <elementDefinition Id="4ae3fc4e-b409-4ae3-90ae-0976af77bdb9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="e724f134-dcb6-4fe9-b39a-f7be8ff55f07" name="Merge4" isLeaf="false">
+            <elementDefinition Id="0bd06ae3-6930-444a-8a96-f9d0d95a61e2" />
+            <flowNodeTargets>
+              <controlFlow Id="d7c95f2c-47dd-4bf1-9818-5e93e3c0f9e7" isLeaf="false">
+                <decisionNodeMoniker Id="23c5181b-4f9a-4b39-8427-d8128f533b2a" LastKnownName="Decision6" />
+                <elementDefinition Id="4c4ed8b0-9b75-4951-a8b9-d52124ed8364" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode Id="199cba5d-172e-4368-b223-59b58ff7043d" name="Merge5" isLeaf="false">
+            <elementDefinition Id="39caefee-5fbc-416e-97d6-187aea54652b" />
+            <flowNodeTargets>
+              <controlFlow Id="d14392e4-73d8-4b74-8184-a59987e6b876" isLeaf="false">
+                <decisionNodeMoniker Id="27c11d30-bc49-4c36-80ef-83080ffa30e7" LastKnownName="Decision8" />
+                <elementDefinition Id="5f4d3faf-8539-4af7-8489-b8824ab6e56d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="63652411-b804-4643-bd96-8d04e48d8013" name="Decision1" isLeaf="false">
+            <elementDefinition Id="f825ce51-1a84-4614-aa03-2c6c80b4fe9e" />
+            <flowNodeTargets>
+              <controlFlow Id="35c7af21-6a27-4b36-a512-05b89e4f4314" guard="Press Brakes" isLeaf="false">
+                <opaqueActionMoniker Id="ed09b79a-af54-4f1f-a9a0-c041c7c7458a" LastKnownName="Apply Brakes" />
+                <elementDefinition Id="134522bf-8f26-4f91-9a95-c1dd3fc309a8" />
+              </controlFlow>
+              <controlFlow Id="cbd21e74-f4a2-4d9c-8aaa-57526b32daae" isLeaf="false">
+                <opaqueActionMoniker Id="98422e9f-6d85-4f94-b26a-e19676b26bc4" LastKnownName="Release Brakes" />
+                <elementDefinition Id="47471d95-fce3-4bf4-9cbb-3ef85765a952" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ed09b79a-af54-4f1f-a9a0-c041c7c7458a" name="Apply Brakes" isLeaf="false">
+            <elementDefinition Id="5d1a0da4-2257-44f7-b4c3-02ec8d93f9c3" />
+            <flowNodeTargets>
+              <controlFlow Id="8ed0f7a5-f4e2-4776-81f2-410160b25c96" isLeaf="false">
+                <mergeNodeMoniker Id="5d95f797-bd17-4b25-9510-9129091d0715" LastKnownName="Merge6" />
+                <elementDefinition Id="e4af64f7-0bb1-4651-8d55-618e1b306dde" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="27c11d30-bc49-4c36-80ef-83080ffa30e7" name="Decision8" isLeaf="false">
+            <elementDefinition Id="295a5ae8-f5b7-4f98-9820-c116b7ebd4df" />
+            <flowNodeTargets>
+              <controlFlow Id="90d4d088-8f25-43ba-9f44-3fbe5a7f23f3" guard="Release Accelerator" isLeaf="false">
+                <opaqueActionMoniker Id="490f6fdc-f0d6-4f86-a1ec-21181cacffbb" LastKnownName="Decrease Speed" />
+                <elementDefinition Id="9cec36b7-889a-403b-a935-8abdd39296fb" />
+              </controlFlow>
+              <controlFlow Id="a530f7f3-4583-4ffe-8091-59cf68c99c2c" isLeaf="false">
+                <mergeNodeMoniker Id="a68577b8-e22c-426a-a9a3-64b834b571f9" LastKnownName="Merge7" />
+                <elementDefinition Id="e70d9eab-d174-46fb-8ba4-607f8032fdd1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="490f6fdc-f0d6-4f86-a1ec-21181cacffbb" name="Decrease Speed" isLeaf="false">
+            <elementDefinition Id="ffb6b858-ad2d-4e9b-b8b9-161c9713964c" />
+            <flowNodeTargets>
+              <controlFlow Id="2bfdc1fb-07e3-4a6f-9e84-beee1e2286d6" isLeaf="false">
+                <mergeNodeMoniker Id="a68577b8-e22c-426a-a9a3-64b834b571f9" LastKnownName="Merge7" />
+                <elementDefinition Id="5ce83e3f-043c-4fde-8cf4-e6cf8e981eff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="a68577b8-e22c-426a-a9a3-64b834b571f9" name="Merge7" isLeaf="false">
+            <elementDefinition Id="2786069b-1118-475e-98ad-05bdf15dee37" />
+            <flowNodeTargets>
+              <controlFlow Id="8e320f07-b8ec-4437-9b3f-b2dc16e39ee1" isLeaf="false">
+                <decisionNodeMoniker Id="63652411-b804-4643-bd96-8d04e48d8013" LastKnownName="Decision1" />
+                <elementDefinition Id="0b132146-58be-4854-a353-b7b8c21835ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="98422e9f-6d85-4f94-b26a-e19676b26bc4" name="Release Brakes" isLeaf="false">
+            <elementDefinition Id="2e50087c-0fc1-49f0-aaff-9ce1a1a3691c" />
+            <flowNodeTargets>
+              <controlFlow Id="0603fa5e-c710-46be-b178-af7c481506a9" isLeaf="false">
+                <mergeNodeMoniker Id="5d95f797-bd17-4b25-9510-9129091d0715" LastKnownName="Merge6" />
+                <elementDefinition Id="e8ce7011-9dfa-4672-a813-6d24427b3587" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="5d95f797-bd17-4b25-9510-9129091d0715" name="Merge6" isLeaf="false">
+            <elementDefinition Id="7b5c07cf-4e37-4aba-b3d3-dd94cf342cc3" />
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a6e02e7e-55a6-4687-890f-c2e61a06339b" name="CarSystem">
+    <elementDefinition Id="4ebfde4e-0d8e-4612-8f78-e63b558e78e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ad9d4263-7ecd-4429-9961-1ca6d7a5fc2e">
+        <profileInstance Id="600afa8c-01be-48c0-8ffc-a9d95f96249a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b3c09b2b-ebc0-476b-b8b3-b9e1a74d7c3b">
+        <profileInstance Id="7a8e350d-8dac-474c-b8b7-865e71f61df1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

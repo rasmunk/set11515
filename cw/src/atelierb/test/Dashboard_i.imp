@@ -1,0 +1,30 @@
+/* Dashboard_i
+ * Author: 40161642
+ * Creation date: 28/10/2016
+ */
+
+IMPLEMENTATION Dashboard_i
+REFINES Dashboard
+SEES
+    OilMonitor, PetrolMonitor
+CONCRETE_VARIABLES
+    oil_pressure_warning, oil_temperature_warning, petrol_level_warning
+INVARIANT
+    oil_pressure_warning : LIGHTS & oil_temperature_warning : LIGHTS & petrol_level_warning : LIGHTS
+INITIALISATION
+    oil_pressure_warning, oil_temperature_warning, petrol_level_warning := off, off, off
+OPERATIONS
+    set_warning_states =
+    VAR op, ot, pl
+    IN
+        op <-- get_pressure_level;
+        ot <-- get_temperature_level;
+        pl <-- get_petrol_level;
+        IF op = oil_pressure_high & ot = oil_temperature_high & pl = petrol_high
+        THEN 
+            oil_pressure_warning, oil_temperature_warning, petrol_level_warning := on, on, on
+        ELSE
+            oil_pressure_warning := off        
+        END
+    END
+ END

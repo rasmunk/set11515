@@ -1,0 +1,23 @@
+/* Dashboard
+ * Author: 40161642
+ * Creation date: 28/10/2016
+ */
+
+IMPLEMENTATION Dashboard
+REFINES Dashboard
+
+SEES
+    OilMonitor, PetrolMonitor
+
+OPERATIONS
+    petrol_warning_on =
+    PRE oil_pressure_warning : LIGHTS
+    THEN oil_pressure_warning := on
+    END;
+
+    petrol_warning_off =
+    PRE oil_pressure_warning : LIGHTS
+    THEN oil_pressure_warning := off
+    END
+
+ END

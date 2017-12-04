@@ -1,0 +1,82 @@
+﻿<component_checksums>
+<base>
+<symbol name="NAME" value="Interface" />
+<symbol name="TYPE" value="0" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="d69597531998e1f0af5736de33e1f195" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" value="8cbd29c4b50bd108963ee56a8841e8ba" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" value="0389fbafa0f3760a43bdab2b935109cb" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+<operation>
+<symbol name="NAME" value="INITIALISATION" />
+<symbol name="COMPONENT" value="Interface" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="bb301382113598b528fa8602c6052c2a" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="enable" />
+<symbol name="COMPONENT" value="Interface" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="99c5b8d68a363ae392de8d4b8c0e5721" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="disable" />
+<symbol name="COMPONENT" value="Interface" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="6583b65b184d82ad5792d667fdcd14b6" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="get_interface_status" />
+<symbol name="COMPONENT" value="Interface" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="94d5142e7383f37dc9ce826539d07d8a" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</operations>
+</base>
+<seen>
+</seen>
+<used>
+</used>
+<included>
+</included>
+<imported>
+</imported>
+<extended>
+</extended>
+<refined>
+</refined>
+</component_checksums>

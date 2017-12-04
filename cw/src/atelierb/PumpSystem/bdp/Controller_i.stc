@@ -1,0 +1,305 @@
+﻿<component_checksums>
+<base>
+<symbol name="NAME" value="Controller_i" />
+<symbol name="TYPE" value="0" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" value="2694f7880c1e6c5a6ae8073dc38bfb07" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" value="892c9bcb7f44fac4aa7e03afcdc3e4ea" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" />
+<symbol name="CONCRETE_VAR" value="82d29d035f6f904468778e4ac57b6fca" />
+<symbol name="ABSTRACT_VAR" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" value="a0e9be0607fc6711cb0e885473582706" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+<operation>
+<symbol name="NAME" value="INITIALISATION" />
+<symbol name="COMPONENT" value="Controller_i" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="c53c932b626dcf7604d7b4b41c90c8ce" />
+<called>
+<operation>
+<symbol name="NAME" value="INITIALISATION" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="ccab062cfdf223bdd436f70ad3728913" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</called>
+<refined>
+<operation>
+<symbol name="NAME" value="INITIALISATION" />
+<symbol name="COMPONENT" value="Controller" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="00000000000000000000000000000000" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="operate" />
+<symbol name="COMPONENT" value="Controller_i" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="a44369c25621b0923f6f675ffeaaec7f" />
+<called>
+<operation>
+<symbol name="NAME" value="get_interface_status" />
+<symbol name="COMPONENT" value="Interface" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="94d5142e7383f37dc9ce826539d07d8a" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_off" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="519839b46259bb9a292a5afcc7e42e5e" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="get_water_level" />
+<symbol name="COMPONENT" value="WaterMonitor" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="aac0789ac783537a9e4d340edc6fe614" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="get_methane_level" />
+<symbol name="COMPONENT" value="MethaneMonitor" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="493386a4ceaa810c54797fad082401b1" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_off" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="519839b46259bb9a292a5afcc7e42e5e" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_on" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="07a2e68063601111201bf2b716c1cca9" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_off" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="519839b46259bb9a292a5afcc7e42e5e" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</called>
+<refined>
+<operation>
+<symbol name="NAME" value="operate" />
+<symbol name="COMPONENT" value="Controller" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="08b43519a7e36ee4c6c5615d1663bcfd" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</refined>
+</operation>
+
+</operations>
+</base>
+<seen>
+<base>
+<symbol name="NAME" value="WaterMonitor" />
+<symbol name="TYPE" value="1" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="99bc1004b0e195fd45fc9b55a385ab42" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+</operations>
+</base>
+<base>
+<symbol name="NAME" value="MethaneMonitor" />
+<symbol name="TYPE" value="1" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="de0ed4f9e1136e704f0104afe30cbe58" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+</operations>
+</base>
+<base>
+<symbol name="NAME" value="Interface" />
+<symbol name="TYPE" value="1" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="d69597531998e1f0af5736de33e1f195" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" value="8cbd29c4b50bd108963ee56a8841e8ba" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" value="0389fbafa0f3760a43bdab2b935109cb" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+</operations>
+</base>
+</seen>
+<used>
+</used>
+<included>
+</included>
+<imported>
+<base>
+<symbol name="NAME" value="Pump" />
+<symbol name="TYPE" value="1" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="445f448ac70843851cf4e259f7b7cf56" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" value="d42a76a86571d971c9f8d73223978f14" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" value="8ea983e2a0c53b3e7f419d63c7a8e021" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+</operations>
+</base>
+</imported>
+<extended>
+</extended>
+<refined>
+<component_checksums>
+<base>
+<symbol name="NAME" value="Controller" />
+<symbol name="TYPE" value="1" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+</operations>
+</base>
+<seen>
+</seen>
+<used>
+</used>
+<included>
+</included>
+<imported>
+</imported>
+<extended>
+</extended>
+<refined>
+</refined>
+</component_checksums>
+
+</refined>
+</component_checksums>

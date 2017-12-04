@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem\bdp\expand_src" old_decomp_dir="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem\bdp\src">
+        <!-- Definition directory list -->
+        <definition_dir path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" />
+        <!-- Component file list -->
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="Controller" suffix="mch" user="40161642">
+            <component name="Controller" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="Controller_i" suffix="imp" user="40161642">
+            <component name="Controller_i" type="implementation" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="Interface" suffix="mch" user="40161642">
+            <component name="Interface" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="MethaneMonitor" suffix="mch" user="40161642">
+            <component name="MethaneMonitor" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="MethaneMonitor_i" suffix="imp" user="40161642">
+            <component name="MethaneMonitor_i" type="implementation" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="Pump" suffix="mch" user="40161642">
+            <component name="Pump" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="PumpSystem" suffix="mch" user="40161642">
+            <component name="PumpSystem" type="specification" />
+        </component_file>
+        <component_file path="C:\Users\40161642\Documents\formal_approaches_to_se\coursework\atelierb\PumpSystem" name="WaterMonitor" suffix="mch" user="40161642">
+            <component name="WaterMonitor" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

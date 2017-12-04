@@ -1,0 +1,18 @@
+digraph {
+Controller_i [ label=" Controller\nController_i " shape= box ]
+OilMonitor_i [ label=" OilMonitor\nOilMonitor_i " shape= box ]
+PetrolMonitor_i [ label=" PetrolMonitor\nPetrolMonitor_i " shape= box ]
+Ignition [ label=" Ignition " shape= boxshape= rhombcolor= pink ]
+Dashboard [ label=" Dashboard " shape= boxshape= rhombcolor= pink ]
+Pedals [ label=" Pedals " shape= boxshape= rhombcolor= pink ]
+EngineInterface [ label=" EngineInterface " shape= boxshape= rhombcolor= pink ]
+BrakeInterface [ label=" BrakeInterface " shape= boxshape= rhombcolor= pink ]
+
+"Controller_i" -> "Ignition" [style= dotted ]
+"Controller_i" -> "Dashboard" [style= dotted ]
+"Controller_i" -> "Pedals" [style= dotted ]
+"Controller_i" -> "PetrolMonitor_i" [style= dotted ]
+"Controller_i" -> "OilMonitor_i" [style= dotted ]
+"Controller_i" -> "EngineInterface" [style= dotted ]
+"Controller_i" -> "BrakeInterface" [style= dotted ]
+}

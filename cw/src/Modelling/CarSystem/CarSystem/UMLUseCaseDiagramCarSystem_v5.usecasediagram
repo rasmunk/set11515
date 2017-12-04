@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="2282f787-c1c3-47a7-ae1f-f62ab845a61f" name="UMLUseCaseDiagramCarSystem" linkedPackageId="054cc062-ea10-47b9-b591-19fc2917d2b8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3c130718-c7ec-4857-b848-6eae2fd1868f" name="Driver" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90d1b376-f36d-4820-a1b4-b4a0145f6e7e" />
+        <targetEnds>
+          <association Id="599548f6-ad4d-46b7-a660-44894f34b530" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="Insert_Key" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ba3c54a4-143a-4a21-9e92-bd4b70619870" LastKnownName="Insert_Key" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4283638-08b4-42d2-8dab-ee579b7508ec" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44471149-cb37-4a47-a5a3-2322253a2a69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87cc8ce8-d56e-4f74-853c-11b3ab3138d9" name="Insert_Key" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bf5c001-d8e0-4200-89af-22d91e978abc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bf6232df-fc3f-4e4f-a014-c2683cec3354" />
+          </association>
+          <association Id="46037797-d80d-4914-ab52-b532c2dcfc10" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="Withdraw_Key" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1fbb9ca0-a423-4cee-bb7a-c71685af6ef3" LastKnownName="Withdraw_Key" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c47165d-0e88-4ec3-9ed0-a7725d79ede6" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8c197bd-f2ca-49ea-8361-2a4af86bc24c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df9c652b-3d04-4582-ace8-54aaff771470" name="Withdraw_Key" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cfeb80d3-1064-4900-8e58-4559f92b3d11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc5b3bc9-2f27-43ab-b00b-5b471a54cb2e" />
+          </association>
+          <association Id="49d7b6c3-77f0-4200-ab8b-147ea6b4c035" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="press_accelerator" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd0fc277-c925-4f40-9202-e1b8e35efbec" LastKnownName="press_accelerator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f936b32-831c-4d86-a5a4-56fe9a344c50" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b6484228-4909-4d6e-a70a-d9e8d39d432d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39386da5-4159-4e6d-bd3e-b1f85367dfe6" name="press_accelerator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ce0c7b1-2fa9-4a24-8f90-a182043f82b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d422ea8c-bb66-42e4-8164-71d7e94ae311" />
+          </association>
+          <association Id="4c2c4013-ea57-4aa3-bb62-3b2f36269e2a" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="release_accelerator" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="54d73c04-0329-4a6f-ac54-698723e92971" LastKnownName="release_accelerator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9390ca19-c99b-45e5-83c6-33ad1d4b013f" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d8c04bb5-45d5-4fae-9a98-4a0ba68239f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f35ca414-fe62-4df6-b4d4-b0251a34cbff" name="release_accelerator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06dfbf59-6854-4a0c-a62d-b47c893dbaf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5ce9a81-2f7e-4986-870d-4a352a8b447d" />
+          </association>
+          <association Id="0c2cd246-eaa5-41b1-bd88-439e294ffb83" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="apply_brakes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9105cb00-58bb-4869-9578-fb4dc66c3b98" LastKnownName="apply_brakes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3b8e792-71e7-460e-be85-df562a4f6713" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="43fc37d9-101a-4180-90ba-03e64ac9f064" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27e09414-3fb5-4c27-9b5c-fa97775798ec" name="apply_brakes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76d84969-5af3-4960-9894-54c13622c9f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a83b330f-6693-4a58-a6d2-d21b1729fb86" />
+          </association>
+          <association Id="77705f78-05c8-4d12-8c79-7fdbdaf51dbe" isDerived="false" sourceEndRoleName="Driver" targetEndRoleName="release_brakes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b8882458-c8f5-4c33-9f08-6819fb83d3e9" LastKnownName="release_brakes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d6be859-832c-4555-8a20-8609e5218e79" name="Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4f772a4d-029b-4bfa-8d0f-3fbff315bb32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="668ad20d-6b2a-4f3f-b811-ed656a327c80" name="release_brakes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7963fa78-5e66-417a-b99b-687e231a43c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85c8fcac-9bb8-4aa5-9864-dd6211540b06" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ba3c54a4-143a-4a21-9e92-bd4b70619870" name="Insert_Key" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe28b968-6236-49c1-a8cf-466aadef2890" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a1df8624-0acb-4170-9097-75784cffcb05" name="Operate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="867c8cd2-57e7-4475-a8a2-7e59313fd3af" />
+        <additions>
+          <include Id="7ff2f389-4b2d-4e49-a551-5703c240e912">
+            <useCaseMoniker Id="ba3c54a4-143a-4a21-9e92-bd4b70619870" LastKnownName="Insert_Key" />
+            <elementDefinition Id="479274e5-f3a1-4fad-addc-89d88795cd79" />
+          </include>
+          <include Id="f00a0fc8-82d2-4083-8d8e-f1a4cc442ac3">
+            <useCaseMoniker Id="1fbb9ca0-a423-4cee-bb7a-c71685af6ef3" LastKnownName="Withdraw_Key" />
+            <elementDefinition Id="ecfc5be9-9e99-42e7-9c6c-e5bd46271375" />
+          </include>
+          <include Id="9471ac62-c8a7-4173-a3f1-703b406250a4">
+            <useCaseMoniker Id="3570f1ce-cd84-42ba-aabd-c960fb194303" LastKnownName="Start Engine" />
+            <elementDefinition Id="4695dfef-232d-48c9-bdbb-2fc94ad1fcf5" />
+          </include>
+          <include Id="30dcee58-cfb7-4184-bca3-321a7fe5a397">
+            <useCaseMoniker Id="0e423db0-e229-420e-88af-839ea7182891" LastKnownName="Check Petrol Level" />
+            <elementDefinition Id="dd04fbc1-a0d1-41b1-8be7-40002c4f9d64" />
+          </include>
+          <include Id="c65df10d-e7b1-4c21-9019-da5d660d2b3f">
+            <useCaseMoniker Id="bfd37969-ab3b-4454-ac81-7b574ea345e8" LastKnownName="Check Oil Temperature" />
+            <elementDefinition Id="6d3f68ac-071b-4dff-94ef-d5be7046b3a4" />
+          </include>
+          <include Id="eda157cd-3ae4-4e4f-b1c6-5584dd1404d3">
+            <useCaseMoniker Id="361fd738-bf0b-4b25-bc21-16d0a20dc752" LastKnownName="Check Oil Pressure" />
+            <elementDefinition Id="30665c58-892f-4f49-8698-bb5d9b2a3b74" />
+          </include>
+          <include Id="2c05b0d6-e822-4ca0-a462-049d08abe02f">
+            <useCaseMoniker Id="fd0fc277-c925-4f40-9202-e1b8e35efbec" LastKnownName="press_accelerator" />
+            <elementDefinition Id="cf678fe6-59a4-4810-a7c5-6d532489dd74" />
+          </include>
+          <include Id="dab61f96-6ce0-4a69-a2e3-3943eaa7bd91">
+            <useCaseMoniker Id="54d73c04-0329-4a6f-ac54-698723e92971" LastKnownName="release_accelerator" />
+            <elementDefinition Id="f7563346-1f85-4ec4-921b-719f4e012baa" />
+          </include>
+          <include Id="3482e0e7-36f2-4c59-bfd6-a8b6d8c545f0">
+            <useCaseMoniker Id="9105cb00-58bb-4869-9578-fb4dc66c3b98" LastKnownName="apply_brakes" />
+            <elementDefinition Id="a6edb312-1a94-47e9-8c03-2eab42211623" />
+          </include>
+          <include Id="e000d6b0-8ccf-40e9-a815-1501e7ff9525">
+            <useCaseMoniker Id="b8882458-c8f5-4c33-9f08-6819fb83d3e9" LastKnownName="release_brakes" />
+            <elementDefinition Id="c0670a94-d7a9-40e2-b34d-2d4cd3bd81d7" />
+          </include>
+          <include Id="ee0d2bde-6e9a-48cd-a577-67b788c92af8">
+            <useCaseMoniker Id="e2cc35fc-fc35-4cc4-8909-3c4c4057f04e" LastKnownName="Check Brake Status" />
+            <elementDefinition Id="b671ffd1-3191-40c9-a41f-e0625255cc86" />
+          </include>
+          <include Id="8ddefae7-689a-477e-826d-caacaca379a6">
+            <useCaseMoniker Id="ce5fa745-d1d9-490e-9f1f-7d4e3f4a8eea" LastKnownName="Check Current Speed" />
+            <elementDefinition Id="41029983-4390-49f6-8e40-f3943c7b9535" />
+          </include>
+          <include Id="6e13ccc1-89c1-46b4-b8b3-bb5ca95ad966">
+            <useCaseMoniker Id="e8d9b286-27ce-48d4-904b-8cc88a7900e6" LastKnownName="Check Engine Status" />
+            <elementDefinition Id="7f52e342-aa96-402c-bbd0-254777c95505" />
+          </include>
+          <include Id="745a11b7-a7d7-47a3-8c18-314f1d3a0a52">
+            <useCaseMoniker Id="78d06655-5a72-42b1-8a2a-61dcb5ba4783" LastKnownName="Stop Engine" />
+            <elementDefinition Id="7cdf1f83-e884-4bee-a79c-efcab3638e7b" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="1a2b83c3-af85-458b-ac64-1d08fceb3b77" LastKnownName="Car Controller" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1fbb9ca0-a423-4cee-bb7a-c71685af6ef3" name="Withdraw_Key" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63957d1c-973b-44d8-a970-3b9fa3e5b6b7" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" name="Interface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e71b6248-725c-4dcd-b397-adab9c5f2958" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1a2b83c3-af85-458b-ac64-1d08fceb3b77" name="Car Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a953d7c3-6ed7-40ca-8f9b-4e2100efc188" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3570f1ce-cd84-42ba-aabd-c960fb194303" name="Start Engine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b1d26e3-7b15-4a78-a20b-42f8e1bc770c" />
+        <targetEnds>
+          <association Id="ffe6741c-bbb9-4ea7-acce-a819e595bbcd" isDerived="false" sourceEndRoleName="Start Engine" targetEndRoleName="Engine Operator" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7a398d6d-691f-48b7-a3bf-63219c741200" LastKnownName="Engine Controller" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cdf674f-1c4b-4225-9558-353e6f9a0a1d" name="Start Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2d3b5969-ed3b-42a9-a9d5-fb4cf028dd27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3ea673b-cf04-4674-93d1-887ce3d07599" name="Engine Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af6ebb84-d3c3-4197-9a26-9deb22adcccc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="682f75c9-46e3-45e2-9bbb-189fd6560377" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="99833f84-ee6b-4a92-a735-c61dab34c7aa" LastKnownName="Engine Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b67ad5e1-8ed1-463a-9541-9ecad6a7dd31" name="Petrol Monitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4eb8df3-78ab-4747-b667-f5d66b4e869c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0e423db0-e229-420e-88af-839ea7182891" name="Check Petrol Level" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="660e8b62-ec66-4c6c-bb1b-1163b03d05da" />
+        <targetEnds>
+          <association Id="8519deac-4f79-4e58-9a3f-1c1f0781fbec" isDerived="false" sourceEndRoleName="Check Petrol Level" targetEndRoleName="Petrol Sensor" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3905b28d-f270-4426-80ba-9c5962a8eed1" LastKnownName="Petrol Sensor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5d3dc59-0580-411c-ad5d-29897f878249" name="Check Petrol Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b88da7f-6aad-4bb2-9903-15a7f0807c1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="824c1a2c-6800-462a-be02-498311a62f13" name="Petrol Sensor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d6449d0-263a-4056-b4de-657adf9818cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="edb27960-063f-4c50-a6fe-58f41f97da9d" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="b67ad5e1-8ed1-463a-9541-9ecad6a7dd31" LastKnownName="Petrol Monitor" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3905b28d-f270-4426-80ba-9c5962a8eed1" name="Petrol Sensor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7a38d13-fe28-4f70-b2fd-008cc06a26ac" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b9945c3d-9258-4c2f-b732-8d56d2df2f24" name="Oil Monitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3f9cd788-2b5d-4d0a-ae6c-3fe3cea485f9" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bfd37969-ab3b-4454-ac81-7b574ea345e8" name="Check Oil Temperature" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f620a3c7-8849-451b-874f-2c39435b4233" />
+        <targetEnds>
+          <association Id="6c48c56d-e8ba-48d8-89fd-f6e592d9a111" isDerived="false" sourceEndRoleName="Check Oil Temperature" targetEndRoleName="Oil Sensor" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="6662dd89-74d5-4317-8e44-d05b47dca720" LastKnownName="Oil Sensor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba5cc062-1dc0-4b3b-82e9-2122083e82e9" name="Check Oil Temperature" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61925075-e11a-4978-a36f-6f7891ee1f61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d392451-e6e1-4eb2-a8eb-d24b0c959952" name="Oil Sensor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e32555f6-6adc-4da2-a91f-64e40c3f07b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93ace254-e5b5-4463-a99e-c625784b382d" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="b9945c3d-9258-4c2f-b732-8d56d2df2f24" LastKnownName="Oil Monitor" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="361fd738-bf0b-4b25-bc21-16d0a20dc752" name="Check Oil Pressure" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e4569b8-5d34-46ac-b907-8129af3c43f8" />
+        <targetEnds>
+          <association Id="789c0723-489e-4047-8714-3e9cfdbf5927" isDerived="false" sourceEndRoleName="Check Oil Pressure" targetEndRoleName="Oil Sensor" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="6662dd89-74d5-4317-8e44-d05b47dca720" LastKnownName="Oil Sensor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d4d7018-0429-4c2c-b104-5a22c1dae81a" name="Check Oil Pressure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0fe282ee-1080-4adf-b13a-395e1f127666" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="13c08573-2525-4c55-881e-b8a45ddc4d2e" name="Oil Sensor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="322610f9-dcd5-4dcb-a7aa-3f6ea2e9dd9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c13ccbf6-8f2d-4967-aeb8-6c1c68d95bcb" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="b9945c3d-9258-4c2f-b732-8d56d2df2f24" LastKnownName="Oil Monitor" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6662dd89-74d5-4317-8e44-d05b47dca720" name="Oil Sensor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c75e043-c1f4-4242-92e8-8bec9c45eb74" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd0fc277-c925-4f40-9202-e1b8e35efbec" name="press_accelerator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f387c6ff-4b56-4c31-8388-60bca87b5510" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54d73c04-0329-4a6f-ac54-698723e92971" name="release_accelerator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88a1a88d-7c6e-46df-bd20-e9565bde3d7d" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9105cb00-58bb-4869-9578-fb4dc66c3b98" name="apply_brakes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="630d546b-d983-48e1-9121-6a4d47ab7a62" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8882458-c8f5-4c33-9f08-6819fb83d3e9" name="release_brakes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f4f0e23-3180-448c-af7a-8171e7c96168" />
+        <subjects>
+          <subsystemMoniker Id="3df8db7f-9116-4a2a-bdf9-4b9dda7133ae" LastKnownName="Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6b5e9fe1-a214-47d3-8410-c65ed85df092" name="Brake Inteface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6bcf7aaa-2e67-4d9c-bcd6-b4f580b46c56" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e2cc35fc-fc35-4cc4-8909-3c4c4057f04e" name="Check Brake Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="537549c4-7767-412c-bd62-78bff96a140b" />
+        <subjects>
+          <subsystemMoniker Id="6b5e9fe1-a214-47d3-8410-c65ed85df092" LastKnownName="Brake Inteface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6428c536-5f98-4564-9275-159eb974ac57" name="Speedometer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="940d423a-3919-4499-ae42-2e28a984a838" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="99833f84-ee6b-4a92-a735-c61dab34c7aa" name="Engine Interface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fefa64b6-2e9b-4040-898f-d39d2e8a8133" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce5fa745-d1d9-490e-9f1f-7d4e3f4a8eea" name="Check Current Speed" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d31a7ff6-0a0b-4b34-8d41-d6ccaa4a789a" />
+        <targetEnds>
+          <association Id="cd82ff51-a1d3-4ed7-966c-7245f87c07e4" isDerived="false" sourceEndRoleName="Check Current Speed" targetEndRoleName="Speedometer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="6428c536-5f98-4564-9275-159eb974ac57" LastKnownName="Speedometer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dab365ab-a024-4be4-8f84-12b7a9fc7af9" name="Check Current Speed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb225b62-9cac-463c-8fb7-ce7179c71b9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6269115e-2130-45b6-88d3-eae7ecfdff5b" name="Speedometer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9ee9601-1d9d-47fb-87bb-7181cbd4a7a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="64f38ee1-261b-40c0-8113-a7a9e34f5e73" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="99833f84-ee6b-4a92-a735-c61dab34c7aa" LastKnownName="Engine Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e8d9b286-27ce-48d4-904b-8cc88a7900e6" name="Check Engine Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c55f721d-ba28-41c6-8ed5-9066f6e19b10" />
+        <targetEnds>
+          <association Id="55feccc0-c5f5-4316-902d-0a3e51873445" isDerived="false" sourceEndRoleName="Check Engine Status" targetEndRoleName="Engine Sensor" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="e9324c64-9a15-41ce-97f8-30b414dbce50" LastKnownName="Engine Sensor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25f7b029-7c41-43c3-bca9-8ba771785937" name="Check Engine Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d23d156a-91ab-4739-816c-0f439210ce31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="812a5c45-28f7-45bc-b99b-4b9d37f0a3d9" name="Engine Sensor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8a07ca0-d5db-43e8-81d9-75e9931e25e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bcfa7386-0f9d-4946-b428-64071b0dd2ba" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="99833f84-ee6b-4a92-a735-c61dab34c7aa" LastKnownName="Engine Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78d06655-5a72-42b1-8a2a-61dcb5ba4783" name="Stop Engine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c687deb8-101b-4fad-8c92-5287095ae98a" />
+        <targetEnds>
+          <association Id="37196476-a1ee-4a14-a598-ed6402a61539" isDerived="false" sourceEndRoleName="Stop Engine" targetEndRoleName="Engine Operator" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7a398d6d-691f-48b7-a3bf-63219c741200" LastKnownName="Engine Controller" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69b2f5aa-f450-47f5-99d7-1ddb0c358cc7" name="Stop Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f39b6983-04e4-457e-afda-87e7ebe5de53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e967b9c-36ae-436b-96cf-426ea8a41a77" name="Engine Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a8231a76-c131-45f0-bab1-fd854e9a303c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8219f333-46ae-4ce7-9cb2-f027be54a1ae" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="99833f84-ee6b-4a92-a735-c61dab34c7aa" LastKnownName="Engine Interface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7a398d6d-691f-48b7-a3bf-63219c741200" name="Engine Controller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b895163f-85da-4a34-a360-39bf238d5f68" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c8df455-16e8-422e-b6e6-8619a87e45da" name="Apply Brakes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0828a92-9856-4351-bbec-f3d759970ec7" />
+        <subjects>
+          <subsystemMoniker Id="6b5e9fe1-a214-47d3-8410-c65ed85df092" LastKnownName="Brake Inteface" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ccc89698-2831-444e-8a45-1d7b3c79143f" name="Brake Sensor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2283e5f8-94be-4b04-a439-5222a8b537ca" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="61a64caf-8bbd-47e5-9659-b74f11205dc7" name="Brake Controller" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35660cf1-2b18-4cf3-9537-953c94986757" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e9324c64-9a15-41ce-97f8-30b414dbce50" name="Engine Sensor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4210021c-7ea7-4134-81d2-fd0d08392502" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="054cc062-ea10-47b9-b591-19fc2917d2b8" name="CarSystem">
+    <elementDefinition Id="4ebfde4e-0d8e-4612-8f78-e63b558e78e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="182f363d-4e8e-4640-a9bd-188a95b24979">
+        <profileInstance Id="286702a3-0c74-4082-ac6a-82b3fa0c534d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9a4b6f18-c034-473a-8fae-6b1b105cfd52">
+        <profileInstance Id="3539ef45-163b-4a68-9aef-bc5a9d4cd97e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

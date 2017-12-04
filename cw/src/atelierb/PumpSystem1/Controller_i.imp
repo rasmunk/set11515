@@ -1,0 +1,47 @@
+IMPLEMENTATION Controller_i
+REFINES Controller
+IMPORTS
+    Pump
+SEES
+    WaterMonitor, MethaneMonitor, Interface
+CONCRETE_VARIABLES
+    water_level, methane_level, interface_state
+INVARIANT
+    water_level : WATER_LEVEL &
+    methane_level : METHANE_LEVEL &
+    interface_state : INTERFACE_STATUS &
+    // When enabled, if methane high, then pump is off
+    (interface_state = enabled & methane_level = methane_high => pump_status = off) &
+    // When enabled, if methane low and water high, pump is on
+    (interface_state = enabled & methane_level = methane_low & water_level = water_high => pump_status = on) &
+    // When enabled, if methane low and water low, pump is off
+    (interface_state = enabled & methane_level = methane_low & water_level = water_low => pump_status = off) &
+    // If disabled, pump should be off
+    (interface_state = disabled => pump_status = off)
+INITIALISATION
+    water_level := water_low;
+    methane_level := methane_low;
+    interface_state := disabled
+OPERATIONS
+    operate =
+    BEGIN
+        interface_state <-- get_interface_status;
+        IF interface_state = disabled
+        THEN pump_off // Ensure pump is off
+        ELSE
+            BEGIN
+                // Sample water and methane
+                water_level <-- get_water_level;
+                methane_level <-- get_methane_level;
+                IF methane_level = methane_high
+                THEN pump_off
+                ELSE 
+                    IF water_level = water_high
+                    THEN pump_on
+                    ELSE pump_off
+                    END
+                END
+            END
+        END
+    END
+END

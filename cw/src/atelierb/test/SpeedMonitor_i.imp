@@ -1,0 +1,21 @@
+/* SpeedMonitor_i
+ * Author: admin
+ * Creation date: 26-10-2016
+ */
+
+IMPLEMENTATION SpeedMonitor_i(maximum_speed)
+REFINES SpeedMonitor
+CONCRETE_VARIABLES
+    speed
+INVARIANT
+    speed : NAT & speed <= maximum_speed
+INITIALISATION
+    speed := 0
+OPERATIONS
+    ss <-- get_speed =
+    BEGIN
+        IF speed : NAT & speed <= maximum_speed
+        THEN ss := speed
+        END;    
+    END
+END

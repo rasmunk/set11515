@@ -1,0 +1,23 @@
+/* PetrolMonitor_i
+ * Author: admin
+ * Creation date: 25-10-2016
+ */
+
+IMPLEMENTATION PetrolMonitor_i
+REFINES PetrolMonitor
+CONCRETE_VARIABLES
+    last_state
+INVARIANT
+    last_state : PETROL_STATES
+INITIALISATION
+    last_state := petrol_high
+OPERATIONS
+    pp <-- get_petrol_level =
+    BEGIN
+        IF last_state = petrol_high
+        THEN last_state := petrol_low
+        ELSE last_state := petrol_high
+        END;
+        pp := last_state
+    END
+ END

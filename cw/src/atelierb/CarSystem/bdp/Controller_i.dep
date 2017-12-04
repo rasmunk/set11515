@@ -1,0 +1,9 @@
+file:b268c4e94f39e3f7cb0ae9096cef62a4
+abst:Controller
+sees:Ignition
+sees:Dashboard
+sees:Pedals
+sees:PetrolMonitor
+sees:OilMonitor
+sees:EngineInterface
+sees:BrakeInterface

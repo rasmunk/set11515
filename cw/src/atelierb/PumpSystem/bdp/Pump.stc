@@ -1,0 +1,71 @@
+﻿<component_checksums>
+<base>
+<symbol name="NAME" value="Pump" />
+<symbol name="TYPE" value="0" />
+<symbol name="PARAM" />
+<symbol name="CONSTRAINTS" />
+<symbol name="SEES" />
+<symbol name="INCLUDES" />
+<symbol name="IMPORTS" />
+<symbol name="PROMOTES" />
+<symbol name="EXTENDS" />
+<symbol name="USES" />
+<symbol name="SETS" value="445f448ac70843851cf4e259f7b7cf56" />
+<symbol name="CONCRETE_VAR" />
+<symbol name="ABSTRACT_VAR" value="d42a76a86571d971c9f8d73223978f14" />
+<symbol name="CONCRETE_CONST" />
+<symbol name="ABSTRACT_CONST" />
+<symbol name="PROPERTIES" />
+<symbol name="INVARIANT" value="8ea983e2a0c53b3e7f419d63c7a8e021" />
+<symbol name="VARIANT" />
+<symbol name="ASSERTIONS" />
+<symbol name="VALUES" />
+<operations>
+<operation>
+<symbol name="NAME" value="INITIALISATION" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="ccab062cfdf223bdd436f70ad3728913" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_on" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="07a2e68063601111201bf2b716c1cca9" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+<operation>
+<symbol name="NAME" value="pump_off" />
+<symbol name="COMPONENT" value="Pump" />
+<symbol name="PRECONDITION" />
+<symbol name="BODY" value="519839b46259bb9a292a5afcc7e42e5e" />
+<called>
+</called>
+<refined>
+</refined>
+</operation>
+
+</operations>
+</base>
+<seen>
+</seen>
+<used>
+</used>
+<included>
+</included>
+<imported>
+</imported>
+<extended>
+</extended>
+<refined>
+</refined>
+</component_checksums>

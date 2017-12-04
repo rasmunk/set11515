@@ -1,0 +1,15 @@
+/* BrakeInterface_i
+ * Author: 40161642
+ * Creation date: 28/10/2016
+ */
+
+IMPLEMENTATION BrakeInterface_i
+REFINES BrakeInterface
+CONCRETE_VARIABLES
+    brake_status
+INVARIANT
+    brake_status : BRAKES_STATES
+INITIALISATION
+    brake_status := released
+
+ END

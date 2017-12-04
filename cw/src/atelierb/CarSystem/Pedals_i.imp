@@ -1,0 +1,31 @@
+/* Pedals_i
+ * Author: 40161642
+ * Creation date: 28/10/2016
+ */
+
+IMPLEMENTATION Pedals_i
+REFINES Pedals
+CONCRETE_VARIABLES
+    accelerator_status, brake_pedal_status
+INVARIANT
+    accelerator_status : PEDAL_STATES & brake_pedal_status : PEDAL_STATES
+INITIALISATION
+    accelerator_status, brake_pedal_status := released, released
+OPERATIONS
+    as <-- get_accelerator_status =
+        BEGIN
+           IF accelerator_status = released
+           THEN accelerator_status := pressed
+           ELSE accelerator_status := released
+           END;
+           as := accelerator_status
+        END;
+    bps <-- get_brake_pedal_status =
+        BEGIN
+           IF brake_pedal_status = released
+           THEN brake_pedal_status := pressed
+           ELSE brake_pedal_status := released
+           END;
+           bps := brake_pedal_status
+        END
+ END

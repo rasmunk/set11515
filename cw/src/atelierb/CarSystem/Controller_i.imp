@@ -1,0 +1,31 @@
+/* Controller_i
+ * Author: 40161642
+ * Creation date: 25/10/2016
+ */
+
+IMPLEMENTATION Controller_i
+REFINES Controller
+SEES
+    Dashboard, Ignition, OilMonitor, Pedals, PetrolMonitor, SpeedMonitor 
+CONCRETE_VARIABLES
+    ignition_status, accelerator_status, brake_pedal_status, petrol_level, oil_pressure, oil_temperature, engine_status, brake_status
+INVARIANT
+    ignition_status : IGNITION_STATUS &
+    accelerator_status : PEDAL_STATES &
+    brake_pedal_status : PEDAL_STATES &
+    petrol_level : PETROL_LEVEL &
+    oil_pressure : OIL_PRESSURE_LEVEL &
+    oil_temperature : OIL_TEMPERATURE_LEVEL &
+    brake_status : 
+INITIALISATION
+    ignition_status := withdrawn_key;
+    accelerator_status := released;
+    brake_pedal_status := released;
+    petrol_level := petrol_high;
+    oil_pressure := oil_pressure_low;
+    oil_temperature := oil_temperature_low;
+    engine_status := off;
+    brake_status := released;
+OPERATIONS
+    
+END

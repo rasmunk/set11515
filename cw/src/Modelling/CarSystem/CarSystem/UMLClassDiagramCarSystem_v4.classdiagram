@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="6d1b257d-ad68-46a3-975c-ab5602da3d46" name="UMLClassDiagramCarSystem_v1" linkedPackageId="6fbfc63d-4bda-4722-a24f-c2c3a92d9078" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e58ba228-deb6-4743-b9c2-7f87cb22ba1b" name="Driver Interface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5df8cd19-23c6-4c5b-9f3c-a82290bf7f4f" />
+        <ownedAttributesInternal>
+          <property Id="73d5c419-61c9-4ec5-9207-65fb385b7a7d" name="key_status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="089109b0-fe5e-4efb-823f-62239de90adb" />
+          </property>
+          <property Id="f2241e2c-86e8-4814-a8fd-d9eac56eaa48" name="accelerator_status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d34207d-af6d-4a0d-b974-13745c7d2569" />
+          </property>
+          <property Id="3afa8bf4-5643-47f8-babd-ce04a7954b63" name="brake_pedal_status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="27a9ebf8-efd6-42c5-8639-d183d32ef920" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="72dd2c21-f15f-41ca-a43a-af518f3ef038" name="get_accelerator_status" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e869ce06-dc28-402c-ae81-88385b31983d" />
+          </operation>
+          <operation Id="171ada65-c19f-47ed-b1ca-fd3e2abbc215" name="get_brake_pedal_status" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c48e8e1d-a08e-483b-916b-fb9d0db52ead" />
+          </operation>
+          <operation Id="a4578429-3090-4105-bb04-7f2c4595f26e" name="get_key_status" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb36662e-1787-4932-948f-76d14da307eb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="66b273b3-18bf-40ad-a4e4-9c381182b120" name="Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="283cbb07-0473-4533-a216-df0a11fb38e1" />
+        <targetEnds>
+          <association Id="b1d14ba5-3a8c-4ae1-95ac-6149e5eff8ec" isDerived="false" sourceEndRoleName="Controller" targetEndRoleName="Driver Interface" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e58ba228-deb6-4743-b9c2-7f87cb22ba1b" LastKnownName="Driver Interface" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f6d357b-19f2-4ada-bca9-f2e3d6514b54" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8570420-b0f5-413e-9e54-8663f7c05930" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b2e77f1-67b5-4e36-baa4-b2f711804add" name="Driver Interface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="6d08065e-a717-410d-9d01-e429e88a9b82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6d616cf2-c119-4d42-ad65-30b57838912d" />
+          </association>
+          <association Id="e2031147-a1c2-4cb2-877e-143f0b6053fe" isDerived="false" sourceEndRoleName="Controller" targetEndRoleName="PetrolMonitor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="07fb9dab-804d-405f-83e3-f8b56b683bb2" LastKnownName="PetrolMonitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87bfa6b1-4e6b-476f-b365-25e97707893e" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="41e00d5e-ae54-4c95-897c-8c9afa086ce7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4ddcfff-9113-4b61-9bf2-8cc112377358" name="PetrolMonitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="c65620c8-f631-473c-b155-caf4167e95e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80293e0b-3231-4bc8-a89c-aa3d379cc872" />
+          </association>
+          <association Id="341f5395-66ce-4f26-945d-d3e5d06a7e9c" isDerived="false" sourceEndRoleName="Controller" targetEndRoleName="OilMonitor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="eb9bc967-9ac7-418a-ad9c-fa862366e2c5" LastKnownName="OilMonitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a14bc42f-63e5-4859-b560-813c222eb9f2" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3af15768-f1fc-4a03-a357-afba5526b7e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9ffd625-284b-4514-9686-a3a6f2500601" name="OilMonitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="a12577a7-684e-449a-8b4d-58394a3fb493" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c30fbc36-61b1-4f5f-9d4b-c7a51e42b705" />
+          </association>
+          <association Id="325d5b7c-a411-4d71-a6f7-d27d85be5be3" isDerived="false" sourceEndRoleName="Controller" targetEndRoleName="EngineInterface" isLeaf="false" isAbstract="false">
+            <classMoniker Id="19aa0436-f3dc-49c5-a645-e2c00d48d96a" LastKnownName="EngineInterface" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5bc7cd72-48ac-45ce-8c24-42ad97d53ca1" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dde09e15-945f-4f4c-a38b-e425c09bbaac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3473fcd1-9bea-4cca-ac81-9083c3a150ef" name="EngineInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="90ff8663-b410-44fd-8509-cd32ca8cd27b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5efc7d09-07bd-4e5a-80c4-1d7b09c13be9" />
+          </association>
+          <association Id="366c8c91-53d4-48e9-95b4-7d7a734b5509" isDerived="false" sourceEndRoleName="Controller" targetEndRoleName="BrakeInterface" isLeaf="false" isAbstract="false">
+            <classMoniker Id="88cae8db-8815-45bb-9cfb-ee9c2e60b10c" LastKnownName="BrakeInterface" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e513c7c5-645f-4073-9ea2-6587765ff355" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="807fa10e-f386-48f4-932c-a377f9b29cd8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cae1f8cb-f570-4e91-af31-b087980a3cce" name="BrakeInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="7047b7e1-231d-40ef-8d6a-c4056f8e6a3a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3d778161-1b8a-4999-93b0-413ccd48152e" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="70a0874b-4be9-45b5-83e5-4e3c0dc98e4b" name="operate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e5637af7-1e9c-48a6-8dac-a1dc3253d856" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07fb9dab-804d-405f-83e3-f8b56b683bb2" name="PetrolMonitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4b3f8de-a271-4cee-a0ad-b031b5ced418" />
+        <ownedOperationsInternal>
+          <operation Id="624d43b8-5188-401a-b5d7-91469a124a59" name="get_petrol_level" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ddcfeb7-46c2-4cf2-b33b-6cf66a4506f9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eb9bc967-9ac7-418a-ad9c-fa862366e2c5" name="OilMonitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb9f790a-196e-4a9f-b811-b3eff68556b4" />
+        <ownedOperationsInternal>
+          <operation Id="22201a46-412b-4985-8eba-100695137758" name="get_oil_pressure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="125aac39-f5e2-41ff-94e1-320dc9d7436e" />
+          </operation>
+          <operation Id="f5955a35-9885-45b8-8e2d-d422b815a6f4" name="get_oil_temperature" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb4e5211-805f-4964-9c91-2f9c6f470789" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="88cae8db-8815-45bb-9cfb-ee9c2e60b10c" name="BrakeInterface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99962390-f1e8-4acb-804a-a6b20dc23aec" />
+        <ownedAttributesInternal>
+          <property Id="065b1f10-0d82-419d-9cd2-239610f863f6" name="brake_status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d910e09d-db0b-4961-9891-74745fab6f66" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3c5f75e5-8c1a-49f3-8581-76c959ac9213" name="apply_brakes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6f0ab07c-ed6b-4ff7-90bf-ebf8e1b9a382" />
+          </operation>
+          <operation Id="412fe97b-f1f0-4056-8c91-ff2f48a68f68" name="release_brakes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="646843fc-84c7-4582-8dac-cf6833b3ac38" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="95533187-2d4e-4781-bc07-94e9456cc760" name="SpeedMonitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c237db99-dbe5-4139-b75c-faed13ba7b8c" />
+        <ownedOperationsInternal>
+          <operation Id="a90eeea8-4a82-4dfb-8014-8990834bfdff" name="get_speed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8bba508a-927c-4f4c-9418-b7012837b009" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="19aa0436-f3dc-49c5-a645-e2c00d48d96a" name="EngineInterface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c16ec9b-478d-4cf5-a0b1-28e8c836af8c" />
+        <targetEnds>
+          <association Id="4d98ebbc-c557-40cc-94d0-6501b7e7f7ab" isDerived="false" sourceEndRoleName="EngineInterface" targetEndRoleName="SpeedMonitor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="95533187-2d4e-4781-bc07-94e9456cc760" LastKnownName="SpeedMonitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d9dba7e-8c23-4a65-bdae-d65afb578a64" name="EngineInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="25212e84-6b43-4a1b-af03-5a324cd54cd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75da6e55-c068-4b7e-9e03-99b1b6ecc3b1" name="SpeedMonitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="d8019c3b-ac03-4893-96e4-adf28419e4fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7bfa96c0-5ae8-4997-adbf-91bf3f47fd28" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5c5a0598-8cf0-4aeb-a86f-4fd637d485f9" name="engine_status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb0e767f-e09f-4fd7-82db-d9a0952fd296" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="01a81b77-4c50-4b82-92ae-5a094550b3c0" name="engine_on" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d6cdfbde-0368-44f4-973f-1f85db03af6e" />
+          </operation>
+          <operation Id="b4c6a9a0-962a-4a0c-a902-46d3648e388d" name="engine_off" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f6e11b1-cc9b-4eb5-a175-e0e0dfb442ca" />
+          </operation>
+          <operation Id="4973c3ef-b6dc-4f8d-81d3-0e15b271dc45" name="increase_speed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c78a45c-2a56-4aac-a3e9-27d4098ab2ff" />
+          </operation>
+          <operation Id="3c23646f-3c1c-4a29-a954-621af6820c1c" name="decrease_speed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ccf86a64-cd58-451f-8dfa-09b8736bc622" />
+          </operation>
+          <operation Id="466fec9a-12ed-489d-9caa-5b02d685beb4" name="get_current_speed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a44be9d-0baf-4a2f-8a84-b0ea185f13d6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6fbfc63d-4bda-4722-a24f-c2c3a92d9078" name="CarSystem">
+    <elementDefinition Id="4ebfde4e-0d8e-4612-8f78-e63b558e78e3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fceb56ba-802a-4e19-b4f1-5ea36f28a484">
+        <profileInstance Id="d2441543-191f-44bb-afb4-342149059bad" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a1ed9e6f-43cb-472a-8c0d-6ce5004ef138">
+        <profileInstance Id="34c280d2-ff46-486c-b692-163bfaa62874" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

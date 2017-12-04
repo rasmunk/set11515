@@ -1,0 +1,33 @@
+/* EngineInterface_i
+ * Author: 40161642
+ * Creation date: 28/10/2016
+ */
+
+IMPLEMENTATION EngineInterface_i
+REFINES EngineInterface
+IMPORTS
+    SpeedMonitor(100), Random(0..1)
+CONCRETE_VARIABLES
+    engine_status
+INVARIANT
+    engine_status : ENGINE_STATES
+INITIALISATION
+    engine_status := off
+OPERATIONS
+    // If the engine is off just return off and it has not failed -> there is a 50 % chance that it will, if it doesn't it will continue being on
+    es <-- get_engine_status =
+        VAR num IN
+           IF engine_status /= off & engine_status /= failed THEN
+              // Local variables must be initialized before being read
+              num <-- get_random_value;
+              IF num = 1 THEN
+                  engine_status,es := failed, failed
+              ELSE
+                  engine_status,es := on,on
+              END
+           ELSE
+               es := engine_status
+           END
+        END
+    
+END

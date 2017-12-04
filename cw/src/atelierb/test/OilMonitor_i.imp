@@ -1,0 +1,32 @@
+/* OilMonitor_i
+ * Author: admin
+ * Creation date: 25-10-2016
+ */
+
+IMPLEMENTATION OilMonitor_i
+REFINES OilMonitor
+CONCRETE_VARIABLES
+    last_pressure_state, last_temperature_state
+INVARIANT
+    last_pressure_state : OIL_PRESSURE &
+    last_temperature_state : OIL_TEMPERATURE
+INITIALISATION
+    last_pressure_state,last_temperature_state := oil_pressure_high,oil_temperature_high
+OPERATIONS
+    pp <-- get_oil_pressure =
+        BEGIN
+            IF last_pressure_state = oil_pressure_high
+            THEN last_pressure_state := oil_pressure_low
+            ELSE last_pressure_state := oil_pressure_high
+            END;
+            pp := last_pressure_state
+         END;
+    tt <-- get_oil_temperature =
+        BEGIN
+            IF last_temperature_state = oil_temperature_high
+            THEN last_temperature_state := oil_temperature_low
+            ELSE last_temperature_state := oil_temperature_high
+            END;
+            tt := last_temperature_state
+         END
+ END
